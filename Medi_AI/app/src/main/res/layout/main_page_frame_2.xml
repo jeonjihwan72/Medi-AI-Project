@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_root_2"
+    android:background="#121212">
+
+    <ImageView
+        android:id="@+id/main_page_image_category_nation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.95"
+        app:layout_constraintDimensionRatio="1:1.05"
+        android:src="@drawable/korea_button"
+        android:contentDescription="지역별 감염병 통계 보기"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/main_page_button2_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_black"
+        android:gravity="start|bottom"
+        android:text="지역별\n감염병 현황 통계"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/main_page_image_category_nation"
+        app:layout_constraintEnd_toEndOf="@+id/main_page_image_category_nation"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/main_page_image_category_nation"
+        app:layout_constraintTop_toTopOf="@+id/main_page_image_category_nation"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/main_page_button2_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:gravity="start|top"
+        android:text="최근 1년동안 발생한 감염병 환자수를 보여줍니다"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/main_page_image_category_nation"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/main_page_image_category_nation"
+        app:layout_constraintTop_toBottomOf="@+id/main_page_button2_title"
+        app:layout_constraintWidth_percent="0.6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

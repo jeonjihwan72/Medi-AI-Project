@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/diseaseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="질병명"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/percentageOfDisease"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0 %"
+        android:textSize="16sp"
+        android:fontFamily="@font/pretendard_regular"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diseaseName" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percentageOfDisease" />
+
+    <ScrollView
+        android:id="@+id/symptom_result_scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/diseaseOverview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="질병 개요"
+                android:textSize="25sp"
+                android:fontFamily="@font/pretendard_semi_bold"/>
+
+            <TextView
+                android:id="@+id/diseaseOverview_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="질병 개요 내용"
+                android:textSize="16sp"
+                android:fontFamily="@font/pretendard_regular"/>
+
+            <TextView
+                android:id="@+id/infectiousDisease_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="감염성 여부"
+                android:textSize="25sp"
+                android:fontFamily="@font/pretendard_semi_bold"/>
+
+            <TextView
+                android:id="@+id/infectiousDisease_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="감염성 여부 내용"
+                android:textSize="16sp"
+                android:fontFamily="@font/pretendard_regular"/>
+
+            <TextView
+                android:id="@+id/treatment_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="치료법"
+                android:textSize="25sp"
+                android:fontFamily="@font/pretendard_semi_bold"/>
+
+            <TextView
+                android:id="@+id/treatment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="치료법 내용"
+                android:textSize="16sp"
+                android:fontFamily="@font/pretendard_regular"/>
+
+            <TextView
+                android:id="@+id/recommendedFood_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="권장 음식"
+                android:textSize="25sp"
+                android:fontFamily="@font/pretendard_semi_bold"/>
+
+            <TextView
+                android:id="@+id/recommendedFood_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="권장 음식 내용"
+                android:textSize="16sp"
+                android:fontFamily="@font/pretendard_regular"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mediai_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

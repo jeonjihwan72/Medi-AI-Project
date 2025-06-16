@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "681648755565",
+    "firebase_url": "https://medi-ai-74fff-default-rtdb.firebaseio.com",
+    "project_id": "medi-ai-74fff",
+    "storage_bucket": "medi-ai-74fff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681648755565:android:91a92a57b0a79a1aa50064",
+        "android_client_info": {
+          "package_name": "com.example.medi_ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "ENTER GEMINI API KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

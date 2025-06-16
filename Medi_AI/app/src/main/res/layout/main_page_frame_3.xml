@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_root_3"
+    android:background="#121212">
+
+    <ImageView
+        android:id="@+id/main_page_image_category_hanbat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="한밭대학교 감염병 진단 통계 보기"
+        android:scaleType="fitXY"
+        android:src="@drawable/hanbat_national_university"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1.05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.95" />
+
+
+    <TextView
+        android:id="@+id/main_page_button3_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_black"
+        android:gravity="start|bottom"
+        android:text="한밭대학교\n감염병 진단 통계"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/main_page_image_category_hanbat"
+        app:layout_constraintEnd_toEndOf="@+id/main_page_image_category_hanbat"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/main_page_image_category_hanbat"
+        app:layout_constraintTop_toTopOf="@+id/main_page_image_category_hanbat"
+        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/main_page_button3_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:gravity="start|top"
+        android:text="한밭대학교에서 애플리케이션을 통해\n감염병이 진단된 횟수를 보여줍니다"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/main_page_image_category_hanbat"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/main_page_image_category_hanbat"
+        app:layout_constraintTop_toBottomOf="@+id/main_page_button3_title"
+        app:layout_constraintWidth_percent="0.6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

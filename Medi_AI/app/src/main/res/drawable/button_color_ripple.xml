@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+
+    <!-- 마스크: 이 영역 안에서만 ripple 이 보이게 함 -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="#787878"/>
+        </shape>
+    </item>
+
+    <!-- 실제 배경: 흰색 원 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#787878"/>
+        </shape>
+    </item>
+
+</ripple>
